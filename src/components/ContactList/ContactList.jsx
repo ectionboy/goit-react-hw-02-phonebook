@@ -4,15 +4,13 @@ export class ContactList extends Component {
     state = {
     }
   render() {
-    console.log(this.props.contacts)
     return (
         <>
         <ul>
             {
                 this.props.contacts.map(contact =>(
                     <li key={contact.id}>
-                        <p>{contact.name}</p>
-                        <p>{contact.number}</p>
+                        <p>{contact.name}: {contact.number}</p>
                         <button onClick={() => this.props.deleteContact(contact.id)}>Delete</button>
                     </li>
                 ))  
