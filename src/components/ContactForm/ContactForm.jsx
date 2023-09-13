@@ -19,7 +19,7 @@ export class ContactForm extends Component {
       <div>
         <form onSubmit={this.formSubmit}>
           <div>
-            <h2>Name</h2>
+            <h3>Name</h3>
             <input
               type="text"
               onChange={this.inputChange}
@@ -29,7 +29,7 @@ export class ContactForm extends Component {
               value={this.state.name}
               required
             />
-            <h2>Number</h2>
+            <h3>Number</h3>
             <input
               type="tel"
               onChange={this.inputChange}
