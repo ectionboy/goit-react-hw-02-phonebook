@@ -39,12 +39,16 @@ export class App extends Component {
     );
     return (
     <>
-    <section>
-      <h1>Phonebook</h1>
-      <ContactForm createContact={this.createContact}/>
-      <h2>Contacts</h2>
-      <Filter contacts={this.state.filter} doFilter={this.doFilter}></Filter>
-      <ContactList contacts={filterContacts} deleteContact={this.deleteContact}/>
+    <section className='m-' style={{width: "300px"}}>
+      <div className='card p-5'>
+        <h1>Phonebook</h1>
+        <ContactForm createContact={this.createContact}/>
+      </div>
+      <div className='card p-5 mt-2'>
+        <h2>Contacts</h2>
+        <Filter contacts={this.state.filter} doFilter={this.doFilter}></Filter>
+        <ContactList contacts={filterContacts} deleteContact={this.deleteContact}/>
+      </div>
     </section>
     </>
     )

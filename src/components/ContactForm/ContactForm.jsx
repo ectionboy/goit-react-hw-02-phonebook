@@ -40,7 +40,7 @@ export class ContactForm extends Component {
               required
             />
           </div>
-          <button type="submit">Add contact</button>
+          <button className='btn btn-primary mt-2' type="submit">Add contact</button>
         </form>
       </div>
     );
