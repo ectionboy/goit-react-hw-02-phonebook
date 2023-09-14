@@ -39,7 +39,7 @@ export class App extends Component {
     );
     return (
     <>
-    <section className='m-' style={{width: "300px"}}>
+    <section className='m-' style={{width: "350px"}}>
       <div className='card p-5'>
         <h1>Phonebook</h1>
         <ContactForm createContact={this.createContact}/>
